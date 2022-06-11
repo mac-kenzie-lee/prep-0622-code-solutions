@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      column-gap: 1.5rem;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+
+    }
+    .column > img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Complete the HTML here -->
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="https://alternativemovieposters.com/wp-content/uploads/2019/10/richkelly_raiders.jpg" alt="Raiders of The lost ark Indiana Jones Movie Poster">
+        <h3>Raiders of The Lost Ark</h3>
+        <p>Dr. Indiana Jones, a renowned archeologist and expert in the occult, is hired by the U.S. Government to find the ark of the covenant, which is believed to still hold the Ten Commandments. Unfortunately, Hitler's agents are also after the ark. Indy and his ex-flame Marion escape from various close scrapes in a quest that takes them from Nepal to Cairo.</p>
+      </div>
+      <div class="column">
+        <img src="https://cdn11.bigcommerce.com/s-yshlhd/images/stencil/1280x1280/products/12785/162797/full.indianajonesandthetempleofdoom_27818__72102.1556890101.jpg" alt="Indiana Jones Raiders and the temple of Doom poster.">
+        <h3>Temple of Doom</h3>
+        <p>With his companions Willie Scott and Short Round, Indiana Jones is on the run when their group stumbles across a village in the depths of India with an alarming mystery. After the theft of their sacred Sankara stone, the village’s children were kidnapped. Indy decides to set out to rescue them along with the sacred stone, following clues deep within a temple that hides more terrors than simple booby traps…</p>
+      </div>
+      <div class="column">
+        <img src="https://cdn11.bigcommerce.com/s-yshlhd/images/stencil/1280x1280/products/24235/171829/indianajonesandthelastcrusade_pepsi_29805__33846.1636558291.jpg" alt="Indiana Jones Raiders last crusade poster">
+        <h3>The Last Crusade</h3>
+        <p>An art collector appeals to Jones to embark on a search for the Holy Grail. He learns that another archaeologist has disappeared while searching for the precious goblet, and the missing man is his own father, Dr. Henry Jones. The artifact is much harder to find than they expected, and its powers are too much for those impure in heart.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
